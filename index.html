@@ -13,7 +13,65 @@
 </head>
 
 <body>
-  <h1>hello</h1>
+
+    <div class="flex items-center justify-center min-h-screen bg-gray-100">
+
+
+        <div class="w-full max-w-md p-8 space-y-6 bg-white rounded-lg shadow-md">
+
+
+            <div class="flex justify-center">
+                <img src="/assets/github-logo.png" alt="Logo" class="w-24 h-24 rounded-full">
+            </div>
+
+            <h2 class="text-2xl font-bold text-center text-gray-800">GitHub Issues Tracker</h2>
+            <p class="text-center">Sign in to manage your issues</p>
+            <form class="space-y-4">
+                <div>
+                    <label class="block mb-1 text-sm font-medium text-gray-700">Username</label>
+                    <input type="text" placeholder="Username" id="userName"
+                        class="w-full px-4 py-2 border rounded-lg focus:ring-2 focus:ring-blue-500 focus:outline-none">
+                </div>
+                <div class="flex items-center justify-between text-sm">
+                    <a href="#" class="text-blue-600 hover:underline">Default: admin</a>
+                </div>
+
+                <div>
+                    <label class="block mb-1 text-sm font-medium text-gray-700">Password</label>
+                    <input type="password" placeholder="Enter Password" id="password"
+                        class="w-full px-4 py-2 border rounded-lg focus:ring-2 focus:ring-blue-500 focus:outline-none">
+                </div>
+
+                <div class="flex items-center justify-between text-sm">
+                    <a href="#" class="text-blue-600 hover:underline">Default: admin123</a>
+                </div>
+
+                <button type="submit" id="submitBtn"
+                    class="w-full py-2 font-semibold text-white bg-blue-600 rounded-lg hover:bg-blue-700 transition duration-200">
+                    Sign In
+                </button>
+            </form>
+
+            <div class="flex items-center my-6">
+
+                <div class="flex-grow border-t border-gray-300"></div>
+
+
+                <span class="mx-4 text-gray-500 font-medium">OR</span>
+
+
+                <div class="flex-grow border-t border-gray-300"></div>
+            </div>
+            <p class="text-center">Demo Credentials:</p>
+            <div class="bg-gray-300 text-center">
+                <p><span class="font-bold">Username:</span>admin</p>
+                <p><span class="font-bold">Password:</span>admin123</p>
+
+            </div>
+
+        </div>
+    </div>
+    <script src="/scripts.js"></script>
 </body>
 
 </html>
