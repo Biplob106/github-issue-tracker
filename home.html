@@ -1,1 +1,88 @@
-<h1>hello</h1>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>github issue tracker</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Geist:wght@100..900&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="navbar bg-base-100 shadow-sm px-12">
+        <div tabindex="0" role="button" class="btn btn-ghost btn-circle avatar ">
+            <div class="w-10 rounded-full">
+                <img alt="Tailwind CSS Navbar component" src="/assets/github-logo.png" />
+            </div>
+        </div>
+        <div class="flex-1">
+            <h2>GitHub Issues Tracker</h2>
+        </div>
+        <div class="flex gap-2">
+            <label class="input">
+                <svg class="h-[1em] opacity-50" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                    <g stroke-linejoin="round" stroke-linecap="round" stroke-width="2.5" fill="none"
+                        stroke="currentColor">
+                        <circle cx="11" cy="11" r="8"></circle>
+                        <path d="m21 21-4.3-4.3"></path>
+                    </g>
+                </svg>
+                <input type="search" required placeholder="Search issues..." />
+            </label>
+            <button class="btn btn-active btn-primary"><span>+</span>New Issue</button>
+
+        </div>
+    </div>
+    <!-- Filter Section -->
+    <div class="w-[80%] mx-auto mt-6 bg-white shadow rounded-lg p-6 flex gap-2">
+
+        <button class="btn  bg-blue-500 text-white border-none hover:bg-blue-600">
+            All
+        </button>
+
+        <button class="btn  btn-outline">
+            Open
+        </button>
+
+        <button class="btn  btn-outline">
+            Closed
+        </button>
+
+    </div>
+    <div class="w-[80%] mx-auto mt-6 bg-white shadow rounded-lg p-6 flex items-center justify-between">
+
+        <!-- Left Section -->
+        <div class="flex items-center gap-4">
+            <img src="/assets/Aperture.png" class="w-10 h-10" alt="">
+
+            <div>
+                <h2 class="font-semibold text-lg">50 Issues</h2>
+                <p class="text-sm text-gray-500">Track and manage your project issues</p>
+            </div>
+        </div>
+
+        <!-- Right Corner Status -->
+        <div class="flex gap-6 text-sm">
+
+            <p class="flex items-center gap-2">
+                <span class="w-2 h-2 bg-green-500 rounded-full"></span>
+                Open
+            </p>
+
+            <p class="flex items-center gap-2">
+                <span class="w-2 h-2 bg-purple-500 rounded-full"></span>
+                Closed
+            </p>
+
+        </div>
+
+    </div>
+
+    <script src="/scripts.js"></script>
+</body>
+
+</html>
