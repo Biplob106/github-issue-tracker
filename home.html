@@ -37,35 +37,35 @@
 
         </div>
     </div>
-    <!-- Filter Section -->
+
     <div class="w-[80%] mx-auto mt-6 bg-white shadow rounded-lg p-6 flex gap-2">
 
-        <button class="btn  bg-blue-500 text-white border-none hover:bg-blue-600">
+        <button class="btn  bg-blue-500 text-white border-none hover:bg-blue-600" id="allBtn">
             All
         </button>
 
-        <button class="btn  btn-outline">
+        <button class="btn  btn-outline" id="openBtn">
             Open
         </button>
 
-        <button class="btn  btn-outline">
+        <button class="btn  btn-outline" id="closedBtn">
             Closed
         </button>
 
     </div>
     <div class="w-[80%] mx-auto mt-6 bg-white shadow rounded-lg p-6 flex items-center justify-between">
 
-        <!-- Left Section -->
+
         <div class="flex items-center gap-4">
             <img src="/assets/Aperture.png" class="w-10 h-10" alt="">
 
             <div>
-                <h2 class="font-semibold text-lg">50 Issues</h2>
+                <h2 class="font-semibold text-lg" id="totalIssue">50 <span>Issues</span></h2>
                 <p class="text-sm text-gray-500">Track and manage your project issues</p>
             </div>
         </div>
 
-        <!-- Right Corner Status -->
+
         <div class="flex gap-6 text-sm">
 
             <p class="flex items-center gap-2">
@@ -81,6 +81,14 @@
         </div>
 
     </div>
+    <div id="issuesContainer" class="grid gap-6 mt-6 w-[80%] mx-auto 
+    grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
+    </div>
+
+    <div id="loadingSpinner" class="hidden text-center mt-6">
+        <span class="loading loading-spinner loading-lg"></span>
+    </div>
+
 
     <script src="/scripts.js"></script>
 </body>
