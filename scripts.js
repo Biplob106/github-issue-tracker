@@ -1,4 +1,3 @@
-
 const signInBtn = document.getElementById("submitBtn");
 if (signInBtn) {
     const userNameInput = document.getElementById("userName");
@@ -17,11 +16,9 @@ if (signInBtn) {
     });
 }
 
-
 const issuesContainer = document.getElementById("issuesContainer");
 const loadingSpinner = document.getElementById("loadingSpinner");
 const totalIssueText = document.getElementById("totalIssue");
-
 
 const allBtn = document.getElementById('allBtn');
 const openBtn = document.getElementById('openBtn');
@@ -84,6 +81,7 @@ if (allBtn) {
         toggleStyle('allBtn');
         displayIssues(allIssues);
         updateStats(allIssues.length); 
+    });
 }
 
 if (openBtn) {
@@ -152,6 +150,5 @@ function displayIssues(issues) {
         issuesContainer.appendChild(card);
     });
 }
-
 
 if (issuesContainer) loadIssues();
