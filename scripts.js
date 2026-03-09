@@ -124,7 +124,7 @@ function displayIssues(issues) {
 
     card.innerHTML = `
         <div class="flex justify-between items-center mb-4">
-            ${issue.status === "open"
+           ${issue.status === "open"
         ? `
       <span class="flex items-center gap-1 text-green-600 text-xs">
         <span class="relative flex h-4 w-4">
@@ -160,10 +160,11 @@ function displayIssues(issues) {
                 <span>by ${issue.author}</span>
             </div>
         </div>
-        <p>${issue.createdAt}</p
+        <p>${issue.created}</p
         `;
     issuesContainer.appendChild(card);
   });
 }
 
 if (issuesContainer) loadIssues();
+
